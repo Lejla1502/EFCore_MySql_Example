@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "gMoOuKF7rBAJscoCT70iiJwv5B1+SkNPlRbWTquA7BVjyllwgZXY6tIGBm2cwj1WTvZPUcch9v5/cZJmNb7Vxw==",
+  "dgSpecHash": "dGxk6AyP7eOdv79ShIw/cmJEHcFFhEw9iKqp3+szYmecr9osELBWLsLKkpoCHj9gkZZfcVM17rGlv/WmlOouPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\EFCore_MySql_Example.WebApi\\EFCore_MySql_Example.WebApi\\EFCore_MySql_Example.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

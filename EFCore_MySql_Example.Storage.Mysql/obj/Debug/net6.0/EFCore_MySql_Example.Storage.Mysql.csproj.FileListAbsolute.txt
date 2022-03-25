@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.AssemblyInfo.cs
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\bin\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.deps.json
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\bin\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\bin\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.pdb
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\bin\Debug\net6.0\EFCore_MySql_Example.Storage.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\bin\Debug\net6.0\EFCore_MySql_Example.Storage.pdb
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.csproj.CopyComplete
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\refint\EFCore_MySql_Example.Storage.Mysql.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.pdb
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage.Mysql\obj\Debug\net6.0\ref\EFCore_MySql_Example.Storage.Mysql.dll

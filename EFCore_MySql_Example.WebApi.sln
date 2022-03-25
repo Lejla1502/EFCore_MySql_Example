@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore_MySql_Example.WebApi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore_MySql_Example.Storage", "EFCore_MySql_Example.Storage\EFCore_MySql_Example.Storage.csproj", "{C3D47D98-1B1C-4B82-9F58-FF771529679C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore_MySql_Example.Storage.Mysql", "EFCore_MySql_Example.Storage.Mysql\EFCore_MySql_Example.Storage.Mysql.csproj", "{A0AFC3DD-9E79-4E58-809A-89949E2F9A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C3D47D98-1B1C-4B82-9F58-FF771529679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D47D98-1B1C-4B82-9F58-FF771529679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D47D98-1B1C-4B82-9F58-FF771529679C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AFC3DD-9E79-4E58-809A-89949E2F9A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AFC3DD-9E79-4E58-809A-89949E2F9A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AFC3DD-9E79-4E58-809A-89949E2F9A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AFC3DD-9E79-4E58-809A-89949E2F9A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
