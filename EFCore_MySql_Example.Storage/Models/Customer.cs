@@ -19,6 +19,9 @@ namespace EFCore_MySql_Example.Storage.Models
         [StringLength(128)]
         public string Name { get; set; }
 
+        //[StringLength(128)]
+        //public string Country { get; set; }
+
 
         [ForeignKey("CustomerId")]
         public List<Order> Orders { get; set; }

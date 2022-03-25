@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EFCore_MySql_Example.Storage.Mysql\EFCore_MySql_Example.Storage.Mysql.csproj" />
     <ProjectReference Include="..\EFCore_MySql_Example.Storage\EFCore_MySql_Example.Storage.csproj" />
   </ItemGroup>
 

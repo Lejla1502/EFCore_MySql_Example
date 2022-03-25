@@ -30,3 +30,5 @@ C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebA
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\obj\Debug\net6.0\ref\EFCore_MySql_Example.WebApi.dll
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Humanizer.dll
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\EFCore_MySql_Example.Storage.Mysql.pdb

@@ -9,6 +9,7 @@
       "EFCore_MySql_Example.WebApi/1.0.0": {
         "dependencies": {
           "EFCore_MySql_Example.Storage": "1.0.0",
+          "EFCore_MySql_Example.Storage.Mysql": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.3",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.1"
         },
@@ -168,6 +169,15 @@
         "runtime": {
           "EFCore_MySql_Example.Storage.dll": {}
         }
+      },
+      "EFCore_MySql_Example.Storage.Mysql/1.0.0": {
+        "dependencies": {
+          "EFCore_MySql_Example.Storage": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.1"
+        },
+        "runtime": {
+          "EFCore_MySql_Example.Storage.Mysql.dll": {}
+        }
       }
     }
   },
@@ -318,6 +328,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "EFCore_MySql_Example.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EFCore_MySql_Example.Storage.Mysql/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
