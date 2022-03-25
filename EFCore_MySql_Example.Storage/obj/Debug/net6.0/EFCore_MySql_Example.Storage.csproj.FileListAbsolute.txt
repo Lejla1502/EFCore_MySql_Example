@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\bin\Debug\net6.0\EFCore_MySql_Example.Storage.deps.json
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\bin\Debug\net6.0\EFCore_MySql_Example.Storage.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\bin\Debug\net6.0\EFCore_MySql_Example.Storage.pdb
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.AssemblyInfo.cs
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\refint\EFCore_MySql_Example.Storage.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\EFCore_MySql_Example.Storage.pdb
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.Storage\obj\Debug\net6.0\ref\EFCore_MySql_Example.Storage.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RotAK+5kyZhGmXhbCI9Ha4ncK3AjCE4kQKR87vy6vJI=",
+  "Source": "EFCore_MySql_Example.WebApi",
+  "BasePath": "_content/EFCore_MySql_Example.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
