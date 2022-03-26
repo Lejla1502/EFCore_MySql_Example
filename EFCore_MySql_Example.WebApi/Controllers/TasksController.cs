@@ -2,7 +2,6 @@
 using EFCore_MySql_Example.WebApi.Requests;
 using EFCore_MySql_Example.WebApi.Responses;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EFCore_MySql_Example.WebApi.Controllers
@@ -10,7 +9,7 @@ namespace EFCore_MySql_Example.WebApi.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class TasksController : ControllerBase
+    public class TasksController : BaseApiController
     {
         private readonly ITaskService taskService;
 

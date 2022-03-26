@@ -39,3 +39,5 @@ C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebA
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\User\source\repos\EFCore_MySql_Example.WebApi\EFCore_MySql_Example.WebApi\bin\Debug\net6.0\Microsoft.Exchange.WebServices.dll
