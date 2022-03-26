@@ -1,6 +1,9 @@
 using EFCore_MySql_Example.Storage.Context;
 using EFCore_MySql_Example.WebApi;
+using EFCore_MySql_Example.WebApi.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,23 @@ if (builder.Environment.IsDevelopment())
      options => options.MigrationsAssembly(Constants.cStorageDatabaseMySqlAssemblyName)));
 }
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = TokenHelper.Issuer,
+                ValidAudience = TokenHelper.Audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(TokenHelper.Secret))
+            };
+
+        });
+
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 using (var serviceScope = app.Services.CreateScope())
@@ -38,6 +58,8 @@ using (var serviceScope = app.Services.CreateScope())
 
 app.UseHttpsRedirection();
 
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
