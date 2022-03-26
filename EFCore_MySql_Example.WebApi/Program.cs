@@ -1,6 +1,8 @@
 using EFCore_MySql_Example.Storage.Context;
 using EFCore_MySql_Example.WebApi;
 using EFCore_MySql_Example.WebApi.Helpers;
+using EFCore_MySql_Example.WebApi.Interfaces;
+using EFCore_MySql_Example.WebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -42,6 +44,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         });
 
 builder.Services.AddAuthorization();
+
+
+
+builder.Services.AddTransient<ITokenService, TokenService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ITaskService, TaskService>();
 
 var app = builder.Build();
 

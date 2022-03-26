@@ -3,6 +3,6 @@
     public class GetTasksResponse: BaseResponse
     {
 
-        public List<Task> Tasks { get; set; }
+        public List<EFCore_MySql_Example.Storage.Models.Task> Tasks { get; set; }
     }
 }

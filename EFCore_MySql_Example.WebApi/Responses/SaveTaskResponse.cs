@@ -2,6 +2,6 @@
 {
     public class SaveTaskResponse : BaseResponse
     {
-        public Task Task { get; set; }
+        public EFCore_MySql_Example.Storage.Models.Task Task { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace EFCore_MySql_Example.WebApi.Requests
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EFCore_MySql_Example.WebApi.Requests
 {
     public class SignupRequest
     {
