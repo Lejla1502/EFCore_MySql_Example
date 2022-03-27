@@ -15,6 +15,12 @@ export class UserService {
   //The user service includes the http calls to our backend users controller which has the endpoints including 
   //login, signup, logout, refreshToken and getUserInfo.
 
+
+  /*these methods don’t do actions (http calls) once they are called, the actions happen once you call the subscribe method on them, 
+  only then the http call gets triggered and a response is returned either to the next part (success) or error part (fail), 
+  and the third section which is the complete part, it is triggered in both cases, 
+  this is where you can put finalizing logic such as stopping a progress bar from loading.*/
+
   constructor(private httpClient:HttpClient) {
 
    }
