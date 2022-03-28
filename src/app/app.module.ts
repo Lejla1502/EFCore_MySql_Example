@@ -7,10 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { ErrorInterceptorProvider } from './interceptors/error.interceptor';
+import { TasksComponent } from './tasks/tasks.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TasksComponent,
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
