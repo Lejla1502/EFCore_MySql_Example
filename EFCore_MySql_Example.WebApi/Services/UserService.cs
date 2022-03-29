@@ -54,6 +54,23 @@ namespace EFCore_MySql_Example.WebApi.Services
             };
         }
 
+        public async Task<UsersResponse> UserInfoAsync(int userId)
+        {
+            var user =await tasksDbContext.Users.FindAsync(userId);
+
+            if(user==null)
+            {
+                return new UsersResponse
+                {
+                    Success = false,
+                    Error = "User doesn't exist",
+                    ErrorCode = "S01"
+                };
+            }
+
+            return new UsersResponse { Success = true, FirstName=user.FirstName, LastName=user.LastName, Email=user.Email, CreationDate=user.Ts };
+        }
+
         public async Task<LogoutResponse> LogoutAsync(int userId)
         {
             var refreshToken = await tasksDbContext.RefreshTokens.FirstOrDefaultAsync(o => o.UserId == userId);

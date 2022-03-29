@@ -113,5 +113,23 @@ namespace EFCore_MySql_Example.WebApi.Controllers
 
             return Ok();
         }
+
+        //[Authorize]
+        [HttpGet]
+        [Route("info/{id}")]
+        public async Task<IActionResult> UserInfo(int id)
+        {
+            
+            var userResponse = await userService.UserInfoAsync(id);
+
+            if (!userResponse.Success)
+            {
+                return UnprocessableEntity(userResponse);
+            }
+
+            return Ok(userResponse);
+
+            
+        }
     }
 }
