@@ -98,5 +98,43 @@ namespace EFCore_MySql_Example.WebApi.Services
                 ErrorCode = "T05"
             };
         }
+
+        public async Task<PutTaskResponse> PutTask(EFCore_MySql_Example.Storage.Models.Task task)
+        {
+            var taskDB = await tasksDbContext.Tasks.FindAsync(task.Id);
+
+            if (taskDB == null)
+            {
+                return new PutTaskResponse
+                {
+                    Success = false,
+                    Error = "Task not found",
+                    ErrorCode = "T01"
+                };
+            }
+
+            taskDB.IsCompleted = task.IsCompleted;
+            taskDB.Name = task.Name;
+            taskDB.Ts = task.Ts;
+
+            var saveResponse = await tasksDbContext.SaveChangesAsync();
+
+            if (saveResponse >= 0)
+            {
+                return new PutTaskResponse
+                {
+                    Success = true,
+                    Task=taskDB
+                };
+            }
+
+            return new PutTaskResponse
+            {
+                Success = false,
+                Error = "Unable to update task",
+                ErrorCode = "T03"
+            };
+
+        }
     }
 }

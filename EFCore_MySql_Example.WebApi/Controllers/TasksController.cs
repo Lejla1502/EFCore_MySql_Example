@@ -62,29 +62,31 @@ namespace EFCore_MySql_Example.WebApi.Controllers
             return Ok(deleteTaskResponse.TaskId);
         }
 
-        /*[HttpPut]
-        public async Task<IActionResult> Put(int id, Task task)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, TaskRequest taskRequest)
         {
+            
+            var task = new EFCore_MySql_Example.Storage.Models.Task {Id=id, IsCompleted = taskRequest.IsCompleted, Ts = taskRequest.Ts, Name = taskRequest.Name, UserId = UserID };
             /*
-            var task = new EFCore_MySql_Example.Storage.Models.Task { IsCompleted = taskRequest.IsCompleted, Ts = taskRequest.Ts, Name = taskRequest.Name, UserId = UserID };
-
             var saveTaskResponse = await taskService.SaveTask(task);
 
             if (!saveTaskResponse.Success)
             {
                 return UnprocessableEntity(saveTaskResponse);
             }
+            */
+            //var taskResponse = new TaskResponse { Id = saveTaskResponse.Task.Id, IsCompleted = saveTaskResponse.Task.IsCompleted, Name = saveTaskResponse.Task.Name, Ts = saveTaskResponse.Task.Ts };
 
-            var taskResponse = new TaskResponse { Id = saveTaskResponse.Task.Id, IsCompleted = saveTaskResponse.Task.IsCompleted, Name = saveTaskResponse.Task.Name, Ts = saveTaskResponse.Task.Ts };
-
-            return Ok(taskResponse);
-            var putTaskResponse = await taskService.PutTask(id, task);
+           // return Ok(taskResponse);
+            var putTaskResponse = await taskService.PutTask(task);
             if (!putTaskResponse.Success)
             {
                 return UnprocessableEntity(putTaskResponse);
             }
 
-            return Ok(putTaskResponse.TaskId);*/
-        //}*/
+            var taskResponse = new TaskResponse { Id = putTaskResponse.Task.Id, IsCompleted = putTaskResponse.Task.IsCompleted, Name = putTaskResponse.Task.Name, Ts = putTaskResponse.Task.Ts };
+
+            return Ok(taskResponse);
+        }
     }
 }
