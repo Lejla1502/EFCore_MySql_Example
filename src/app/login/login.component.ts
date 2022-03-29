@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
  
   onSubmit(): void {
  
+    console.log(this.loginRequest);
     this.userService.login(this.loginRequest).subscribe({
       next: (data => {
         console.debug(`logged in successfully ${data}`);

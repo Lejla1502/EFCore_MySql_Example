@@ -11,11 +11,11 @@ import { TaskService } from '../services/task.service';
 export class TasksComponent implements OnInit {
 
   newTaskString: string = '';
-  tasks$: Observable<TaskResponse[]> | undefined;
+  tasks: Observable<TaskResponse[]> | undefined;
   constructor(private taskService: TaskService) { }
  
   ngOnInit(): void {
-    this.tasks$ = this.taskService.getTasks();
+    this.tasks = this.taskService.getTasks();
   }
  
   addTask(): void {
@@ -28,21 +28,21 @@ export class TasksComponent implements OnInit {
       name: this.newTaskString,
       ts: new Date()
     };
-    this.taskService.saveTask(task).subscribe(() => this.tasks$ = this.taskService.getTasks());
+    this.taskService.saveTask(task).subscribe(() => this.tasks= this.taskService.getTasks());
   }
  
   updateTask(task: TaskResponse) {
     console.log('inside updatetask');
     console.log(`task id is ${task.id}`);
     task.isCompleted = !task.isCompleted;
-    this.taskService.updateTask(task).subscribe(() => {});
+    this.taskService.updateTask(task.id, task).subscribe(() => {});
  
   }
  
   removeTask(task: TaskResponse) {
     console.log('inside removeTask');
     console.log(`task id is ${task.id}`);
-    this.taskService.deleteTask(task.id).subscribe(() => this.tasks$ = this.taskService.getTasks());
+    this.taskService.deleteTask(task.id).subscribe(() => this.tasks = this.taskService.getTasks());
   }
  
 

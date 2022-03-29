@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-            <div class="list-group col-sm-10 mt-2" *ngfor="let task of tasks$ | async">
+            <div class="list-group col-sm-10 mt-2" *ngFor="let task of tasks | async">
                 <a role="button" (click)="updateTask(task)" class="list-group-item list-group-item-action" [ngClass]="{'list-group-item-success': task.isCompleted}">
                     <div class="d-flex justify-content-between">
                         <h5 class="mb-1">{{ task.name }}</h5>

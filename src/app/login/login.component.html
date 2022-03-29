@@ -17,7 +17,7 @@
               <label for="password">Password</label>
               <input type="password" class="form-control" name="password" [(ngModel)]="loginRequest.password" required="" #password="ngModel">
               <div class="alert alert-danger" role="alert" *ngIf="!email.pristine &amp;&amp; password.errors">
-                <div *ngif="password.errors['required']">Password is required</div>
+                <div *ngIf="password.errors['required']">Password is required</div>
               </div>
             </div>
             <div class="form-group">
@@ -26,7 +26,7 @@
               </button>
             </div>
             <div class="form-group">
-              <div class="alert alert-danger" role="alert" *ngIf="ngLoginForm.submitted &amp;&amp; isLoginFailed">
+              <div class="alert alert-danger" role="alert" *ngIf="ngLoginForm.submitted && isLoginFailed">
                 Login failed: {{ error.error }}
               </div>
             </div>
