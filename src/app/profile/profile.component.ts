@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserResponse } from '../responses/user-response';
+import { TokenService } from '../services/token.service';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -15,10 +16,18 @@ export class ProfileComponent implements OnInit {
     lastName: '',
     creationDate: new Date()
   }
-  constructor(private userService: UserService) { }
+
+
+  userId:number=+(window.localStorage.getItem('ID') || 0);
+
+  constructor(private userService: UserService, private tokenService: TokenService) { }
  
   ngOnInit(): void {
-    this.userService.getUserInfo().subscribe(
+    var tokenExp=this.tokenService.isLoggedIn();
+    console.log(tokenExp);
+    console.log(window.localStorage.getItem('ID'));
+  console.log(this.userId);
+    this.userService.getUserInfo(this.userId).subscribe(
       {
         next: (data => {
           console.log("data");

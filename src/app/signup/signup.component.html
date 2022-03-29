@@ -5,22 +5,23 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card card-container p-3">
-          <form #ngSignup="ngForm" name="form" (ngsubmit)="onSubmit(ngSignup.value)" *ngIf="!isSuccessful" novalidate="">
-  
+
+          <form #ngSignup="ngForm" name="form" (ngSubmit)="ngSignup.form.valid && onSubmit(ngSignup.value)"  novalidate="">
+  {{ngSignup.value | json}}
             <div class="form-group">
               <label for="email">Email</label>
               <input type="text" class="form-control" name="email" [(ngModel)]="signupRequest.email" email="" #email="ngModel">
-              <div class="alert-danger" *ngif="email.errors &amp;&amp; ngSignup.submitted">
-                <div *ngif="email.errors['email']">Invalid Email</div>
+              <div class="alert-danger" *ngIf="email.errors && ngSignup.submitted">
+                <div *ngIf="email.errors['email']">Invalid Email</div>
               </div>
             </div>
   
             <div class="form-group">
               <label for="password">Password</label>
               <input type="password" class="form-control" name="password" [(ngModel)]="signupRequest.password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" #password="ngModel">
-              <div class="alert-danger" *ngIf="ngSignup.submitted &amp;&amp; password.errors">
-                <div *ngif="password.errors['required']">Password is required</div>
-                <div *ngif="password.errors['pattern']"> Enter a strong password. At least one number and one uppercase
+              <div class="alert-danger" *ngIf="ngSignup.submitted && password.errors">
+                <div *ngIf="password.errors['required']">Password is required</div>
+                <div *ngIf="password.errors['pattern']"> Enter a strong password. At least one number and one uppercase
                   and
                   lowercase letter, and at least 8 or more characters.</div>
               </div>
@@ -29,9 +30,9 @@
             <div class="form-group">
               <label for="confirmPassword">Confirm Password</label>
               <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="signupRequest.confirmPassword" required="" pattern="{{ password.value }}" #confirmPassword="ngModel">
-              <div class="alert-danger" *ngIf="ngSignup.submitted &amp;&amp; confirmPassword.errors">
-                <div *ngif="confirmPassword.errors['required']">Confirm Password is required</div>
-                <div *ngif="confirmPassword.errors['pattern']"> Enter a strong password. At least one number and one
+              <div class="alert-danger" *ngIf="ngSignup.submitted && confirmPassword.errors">
+                <div *ngIf="confirmPassword.errors['required']">Confirm Password is required</div>
+                <div *ngIf="confirmPassword.errors['pattern']"> Enter a strong password. At least one number and one
                   uppercase
                   and lowercase letter, and at least 8 or more characters.</div>
               </div>
@@ -40,24 +41,29 @@
             <div class="form-group">
               <label for="firstName">First Name</label>
               <input type="text" class="form-control" name="firstName" [(ngModel)]="signupRequest.firstName" required="" #firstName="ngModel">
-              <div class="alert-danger" *ngIf="firstName.errors &amp;&amp; ngSignup.submitted">
-                <div *ngif="firstName.errors['required']">First name is required</div>
+              <div class="alert-danger" *ngIf="firstName.errors && ngSignup.submitted">
+                <div *ngIf="firstName.errors['required']">First name is required</div>
               </div>
             </div>
   
             <div class="form-group">
               <label for="firstName">Last Name</label>
               <input type="text" class="form-control" name="lastName" [(ngModel)]="signupRequest.lastName" required="" #lastName="ngModel">
-              <div class="alert-danger" *ngIf="lastName.errors &amp;&amp; ngSignup.submitted">
-                <div *ngif="lastName.errors['required']">Last name is required</div>
+              <div class="alert-danger" *ngIf="lastName.errors && ngSignup.submitted">
+                <div *ngIf="lastName.errors['required']">Last name is required</div>
               </div>
             </div>
   
             <div class="form-group">
               <input class="btn btn-primary btn-block" type="submit" value="Sign Up">
             </div>
-            <div class="alert alert-warning" *ngIf="ngSignup.submitted &amp;&amp; isSignUpFailed">
+            <div class="alert alert-warning" *ngIf="ngSignup.submitted && isSignUpFailed">
               Signup failed!<br>{{ errorMessage }}
+            </div>
+            <div class="form-group">
+              <div class="alert alert-danger" role="alert" *ngIf=" !ngSignup.form.valid">
+                Signup form not valid
+              </div>
             </div>
           </form>
           <div class="alert alert-success" *ngIf="isSuccessful">

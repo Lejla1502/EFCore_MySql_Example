@@ -23,6 +23,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(signupForm: any): void {
+    console.log("kjdjkdldf,d");
     console.log(JSON.stringify(signupForm));
  
     this.userService.signup(this.signupRequest).subscribe({
