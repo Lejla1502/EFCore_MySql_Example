@@ -116,11 +116,11 @@ namespace EFCore_MySql_Example.WebApi.Controllers
 
         //[Authorize]
         [HttpGet]
-        [Route("info/{id}")]
-        public async Task<IActionResult> UserInfo(int id)
+        [Route("info")]
+        public async Task<IActionResult> UserInfo()
         {
             
-            var userResponse = await userService.UserInfoAsync(id);
+            var userResponse = await userService.UserInfoAsync(UserID);
 
             if (!userResponse.Success)
             {
