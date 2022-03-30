@@ -45,8 +45,8 @@ export class UserService {
     return this.httpClient.post(`${environment.apiUrl}/users/signup`, null);
   }
 
-  getUserInfo(userId:number): Observable<UserResponse> {
-    return this.httpClient.get<UserResponse>(`${environment.apiUrl}/users/info/${userId}`);
+  getUserInfo(): Observable<UserResponse> {
+    return this.httpClient.get<UserResponse>(`${environment.apiUrl}/users/info`);
   }
 
 }

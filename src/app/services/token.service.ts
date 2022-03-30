@@ -22,6 +22,9 @@ export class TokenService {
       window.localStorage.setItem('ID', tokenResponse.userId.toString());
       window.localStorage.setItem('FN', tokenResponse.firstName);
     }
+
+    console.log(window.localStorage.getItem('AT'));
+    console.log(window.localStorage.getItem('ID'));
  
   }
 

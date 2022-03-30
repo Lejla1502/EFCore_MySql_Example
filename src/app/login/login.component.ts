@@ -41,7 +41,8 @@ export class LoginComponent implements OnInit {
         this.tokenService.saveSession(data);
         this.isLoggedIn = true;
         this.isLoginFailed = false;
-        this.reloadPage();
+        //this.reloadPage();
+        this.router.navigate(['tasks']);
       }),
       error: ((error: ErrorResponse) => {
         this.error = error;

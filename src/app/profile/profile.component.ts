@@ -23,11 +23,8 @@ export class ProfileComponent implements OnInit {
   constructor(private userService: UserService, private tokenService: TokenService) { }
  
   ngOnInit(): void {
-    var tokenExp=this.tokenService.isLoggedIn();
-    console.log(tokenExp);
-    console.log(window.localStorage.getItem('ID'));
-  console.log(this.userId);
-    this.userService.getUserInfo(this.userId).subscribe(
+   
+    this.userService.getUserInfo().subscribe(
       {
         next: (data => {
           console.log("data");

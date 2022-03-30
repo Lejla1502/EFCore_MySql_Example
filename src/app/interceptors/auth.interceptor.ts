@@ -32,6 +32,7 @@ export class AuthInterceptor implements HttpInterceptor {
       let session = this.tokenService.getSession();
       if (session){
         request = request.clone({ headers: request.headers.set('Authorization', `Bearer ${session.accessToken}`) });
+        console.log(request);
       }
       
     }
